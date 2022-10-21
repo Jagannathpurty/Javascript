@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num=Number(prompt("Enter a number is="));
+        var i,count;
+        for(var a=1;a<=num;a++){
+            count=0;
+            for(var i=2;i<=a/2;i++){
+                if(a %i==0){
+                    count=1;
+                    break;
+                }
+            }
+            if(a!=1 && count==0){
+                document.write( +a);
+                document.write("\t");
+            }
+        }
+
+    </script>
+</body>
+</html>
