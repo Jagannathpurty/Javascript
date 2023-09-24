@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=[3,5,6,7,8,9,67]
+
+        num.push(30);
+        console.log(num.length);
+      let sorting=  num.sort()
+      console.log(sorting)
+      //join method
+     let join= num.join("_");
+      console.log(join)
+      //pop element from array
+      num.pop();
+      console.log(sorting);
+      let shift=num.shift();
+      console.log(sorting);
+      let unshitf=num.unshift(56);
+      console.log(sorting);
+      let type=num.toString();
+      console.log(typeof type)
+      console.log(typeof sorting)
+      let slice=sorting.slice(4,7);
+      console.log(slice)
+
+      let new_arr=[10,34,78,56,67];
+      let merge=sorting.concat(new_arr);
+      console.log(merge)
+//for in
+console.log("These are the index elemet..")
+      for(let i in merge){
+        console.log(i);
+      }
+
+      //for off
+      console.log("The are the element of an array..")
+      for (let i of merge){
+        console.log(i);
+      }
+console.log("These are the filter element which are the true elememt..")
+      let filter=merge.filter((element) =>{
+        return element > 10;
+      })
+      console.log(filter)
+
+      console.log("Reduce element of an array");
+      let reduce=merge.reduce((a,b) =>
+      {
+        return a+b;
+      })
+      console.log(reduce)
+
+      //forEach loop
+      console.log("There are using forEach loop..")
+     merge.forEach((element) => {
+        console.log(element)
+        
+     })
+     //Reverse element
+     merge.reverse();
+     console.log(merge)
+
+     //splice element
+
+     merge.splice(2,3,1034,570,400);
+
+console.log(merge);
+    </script>
+</body>
+</html>
