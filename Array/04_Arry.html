@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce function and Filter</title>
+</head>
+<body>
+    
+
+
+    <script>
+        let arry=[2,3,4,6,7,8,9,67,90,45,67,89,70]
+
+        let newarry=arry.filter((a)=>{
+            return a < 10;
+        })
+
+        console.log(newarry)
+
+
+
+        let arry1=[3,5,6,7,8,9,10,57,48,49,50]
+        let newarry1=arry1.reduce((h1,h2)=>{
+            return h1+h2
+        })
+
+        console.log(newarry1)
+
+
+        let newmap=arry1.map((element)=>{
+            console.log(element)
+        })
+
+
+        console.log(typeof (arry1))
+        console.log(arry1.join(" "))
+
+        arry1.splice(2,3,100,200,300)
+        console.log(arry1)
+        console.log("The lenght of the given array"+"= " +arry1.length)
+
+
+        for(let b in arry1){
+            console.log(arry1[b])
+        }
+    </script>
+</body>
+</html>

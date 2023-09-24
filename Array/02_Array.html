@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arry1=[4,6,9,"Jagannath","Sunil","Bhagban","Chandan"]
+        let array2=["Purty","Munda","Murmu","Beshra"]
+        let newarray=arry1.concat(array2)
+        console.log(newarray);
+        for(let a of newarray){
+            console.log(a)
+        }
+        newarray.sort()
+        console.log(newarray)
+
+        let number=[889,90,46,45,5,2,3,6,8]
+
+       
+        number.sort()
+        console.log(number)//Sort the alphabatic way
+        
+        number.pop()
+        console.log(number)
+        number.push(600)
+        console.log(number)
+        console.log(number.length)
+        console.log("The only we want to print the value of an array items")
+
+        for(let a of number){//Its Directly access the value of an array
+            console.log(a);
+
+        }
+       
+      let slice= number.slice(2,5)
+        console.log(slice)
+
+    </script>
+</body>
+</html>

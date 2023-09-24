@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+
+    <script>
+        let array=[7,8,0,6,"jaga","Hello","Sunil","Bhagaban"]
+        console.log(array);
+        console.log("The type of" + " "+ typeof(array))
+        array.splice(2,3,100,500,"Chandan")
+        console.log(array)
+       array.shift()//Remove the initial value of the aaray
+       console.log(array)
+       array.unshift(700)
+       console.log(array)
+       array.join("_")
+       console.log(array)
+       console.log(array[4])
+       array1=[45,644,466,"kanhu","samara","jerry"]
+       let newarray=array.concat(array1)
+       console.log(newarray)
+       for(let a in newarray){//Print only key value using for in loop
+        console.log(newarray[a]);
+
+       }
+       console.log(">>>>>>>................")
+
+       for(let a of newarray){//Directly acces array items
+        console.log(a)
+       }
+ delete array[0]//Only Delete the element but length is same
+ console.log(array)
+    </script>
+</body>
+</html>
