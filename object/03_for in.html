@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For in loop</title>
+</head>
+<body>
+    
+    <script>
+        Student={
+            name:"Jagannath",
+            roll:2001297127,
+            degignation:"Student",
+            college:"NIT",
+            city:"BBSR"
+
+        }
+
+        console.log(Student)
+        //using thr fot in loop we will only get the key value of student object
+
+        console.log("These only key value of student object")
+        for(let a in Student){
+           // console.log(a)
+           console.log(Student[a])
+
+           console.log("The key vlue are" +a + " "+Student[a])
+        }
+        //Using the for of loop
+        // for(let b of "college"){
+        //     console.log(b)
+        // }
+
+        
+
+    </script>
+</body>
+</html>
